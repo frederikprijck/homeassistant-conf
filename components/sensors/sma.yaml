@@ -1,0 +1,9 @@
+- platform: sma
+  host: !secret sma_host
+  password: !secret sma_password
+  sensors:
+    current_consumption: [total_consumption]
+    pv_power:
+    total_yield:
+    daily_yield:
+    status:
