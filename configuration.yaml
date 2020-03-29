@@ -1,28 +1,28 @@
 
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
-    http:
-      base_url: !secret duckdns_url
-      ssl_certificate: /ssl/fullchain.pem
-      ssl_key: /ssl/privkey.pem
-    
-    sensor: !include_dir_merge_list components/sensors/
-    
-    tts:
-      - platform: google_translate
-    
-    group: !include groups.yaml
-    automation: !include automations.yaml
-    script: !include scripts.yaml
-    
-    alarm_control_panel: !include_dir_merge_list components/alarm_control_panel
-    
-    telegram_bot: !include_dir_merge_list components/telegram_bot
-        
-    notify:
-      - name: NotifyYamila
-        platform: telegram
-        chat_id: 944672061
-      - name: NotifyFrederik
-        platform: telegram
-        chat_id: 798876180
+  http:
+    base_url: !secret duckdns_url
+    ssl_certificate: /ssl/fullchain.pem
+    ssl_key: /ssl/privkey.pem
+  
+  sensor: !include_dir_merge_list components/sensors/
+  
+  tts:
+    - platform: google_translate
+  
+  group: !include groups.yaml
+  automation: !include automations.yaml
+  script: !include scripts.yaml
+  
+  alarm_control_panel: !include_dir_merge_list components/alarm_control_panel
+  
+  telegram_bot: !include_dir_merge_list components/telegram_bot
+      
+  notify:
+    - name: NotifyYamila
+      platform: telegram
+      chat_id: 944672061
+    - name: NotifyFrederik
+      platform: telegram
+      chat_id: 798876180
