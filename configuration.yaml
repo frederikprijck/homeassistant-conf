@@ -2,24 +2,24 @@
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
 
-  http:
-    ssl_certificate: /ssl/fullchain.pem
-    ssl_key: /ssl/privkey.pem
+http:
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
   
-  mqtt:
-    discovery: true
-    discovery_prefix: homeassistant
-    broker: !secret mqtt_broker
-    port: !secret mqtt_port
-    username: !secret mqtt_username
-    password: !secret mqtt_password
+mqtt:
+  discovery: true
+  discovery_prefix: homeassistant
+  broker: !secret mqtt_broker
+  port: !secret mqtt_port
+  username: !secret mqtt_username
+  password: !secret mqtt_password
   
   # Text to speech
-  tts:
-    - platform: google_translate
+tts:
+  - platform: google_translate
   
-  group: !include groups.yaml
-  automation: !include automations.yaml
-  script: !include scripts.yaml
-  scene: !include scenes.yaml
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
   
