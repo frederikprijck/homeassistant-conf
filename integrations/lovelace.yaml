@@ -1,4 +1,0 @@
-lovelace:
-  resources:
-    - url: /local/vacuum-card.js
-      type: module
