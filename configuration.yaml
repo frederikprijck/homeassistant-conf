@@ -14,9 +14,16 @@ mqtt:
   username: !secret mqtt_username
   password: !secret mqtt_password
   
-  # Text to speech
+alarm_control_panel:
+  - platform: manual
+    arming_time: 0
+    delay_time: 0
+
 tts:
   - platform: google_translate
+  
+zwave:
+  usb_path: /dev/ttyACM0
   
 group: !include groups.yaml
 automation: !include automations.yaml
