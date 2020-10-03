@@ -47,21 +47,19 @@ cards:
             entity: binary_sensor.schuifraam_contact
             icon: hass:window-closed-variant
             show_state: false
+            color_type: card
             state:
-              - value: "off"
-                color: rgb(5, 147, 255)
               - value: "on"
-                color: rgb(189, 255, 5)
+                color: rgb(5, 147, 255)
+                icon: mdi:window-open-variant
           - type: "custom:button-card"
             entity: binary_sensor.voordeur_contact
             icon: mdi:door-closed
             show_state: false
             color_type: card
             state:
-              - value: "off"
-                color: rgb(5, 147, 255)
               - value: "on"
-                color: rgb(189, 255, 5)
+                color: rgb(5, 147, 255)
                 icon: mdi:door-open
           - type: "custom:button-card"
             entity: binary_sensor.achterdeur_contact
@@ -69,9 +67,7 @@ cards:
             show_state: false
             color_type: card
             state:
-              - value: "off"
-                color: rgb(5, 147, 255)
               - value: "on"
-                color: rgb(189, 255, 5)
+                color: rgb(5, 147, 255)
                 icon: mdi:door-open
           
