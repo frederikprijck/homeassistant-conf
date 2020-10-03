@@ -3,10 +3,7 @@ title: House
 path: house
 cards:
   - type: vertical-stack
-    cards: 
-      - !include
-        - ../includes/titles.yaml
-        - title: TEMPERATUUR
+    cards:
       - type: sensor
         entity: sensor.living_temperature
         graph: line
