@@ -1,8 +1,10 @@
 title: House
 path: house
 cards:
-  - type: sensor
-    entity: sensor.living_temperature
-    graph: line
-    name: Living
+  - type: vertical-stack
+    cards: 
+      - type: sensor
+        entity: sensor.living_temperature
+        graph: line
+        name: Living
         
