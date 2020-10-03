@@ -48,29 +48,32 @@ cards:
             icon: hass:window-closed-variant
             show_state: false
             color_type: card
-            color: rgb(43,55,78)
             state:
+              - value: "off"
+                color: var(--ha-card-background)
               - value: "on"
-                color: rgb(5, 147, 255)
+                color: var(--accent-color)
                 icon: mdi:window-open-variant
           - type: "custom:button-card"
             entity: binary_sensor.voordeur_contact
             icon: mdi:door-closed
             show_state: false
             color_type: card
-            color: rgb(43,55,78)
             state:
+              - value: "off"
+                color: var(--ha-card-background)
               - value: "on"
-                color: rgb(5, 147, 255)
+                color: var(--accent-color)
                 icon: mdi:door-open
           - type: "custom:button-card"
             entity: binary_sensor.achterdeur_contact
             icon: mdi:door-closed
             show_state: false
             color_type: card
-            color: rgb(43,55,78)
             state:
+              - value: "off"
+                color: var(--ha-card-background)
               - value: "on"
-                color: rgb(5, 147, 255)
+                color: var(--accent-color)
                 icon: mdi:door-open
           
