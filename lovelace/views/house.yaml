@@ -1,19 +1,8 @@
 title: House
 path: house
-
 cards:
-          
-  ## ROW 2 ###################################################################################################################
-  - type: vertical-stack
-    cards: 
-      - !include
-        - ../includes/titles.yaml
-        - title: TEMPERATUUR
-      ## TEMPERATUR / LICHT / LUFTFEUCHTIGKEIT ##
-      - type: horizontal-stack
-        cards:
-          - type: sensor
-            entity: sensor.living_temperature
-            graph: line
-            name: Living
+  - type: sensor
+    entity: sensor.living_temperature
+    graph: line
+    name: Living
         
