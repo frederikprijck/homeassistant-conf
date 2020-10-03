@@ -48,6 +48,7 @@ cards:
             icon: hass:window-closed-variant
             show_state: false
             color_type: card
+            color: rgb(43,55,78)
             state:
               - value: "on"
                 color: rgb(5, 147, 255)
@@ -57,6 +58,7 @@ cards:
             icon: mdi:door-closed
             show_state: false
             color_type: card
+            color: rgb(43,55,78)
             state:
               - value: "on"
                 color: rgb(5, 147, 255)
@@ -66,6 +68,7 @@ cards:
             icon: mdi:door-closed
             show_state: false
             color_type: card
+            color: rgb(43,55,78)
             state:
               - value: "on"
                 color: rgb(5, 147, 255)
