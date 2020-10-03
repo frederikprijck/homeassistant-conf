@@ -1,0 +1,38 @@
+icon: mdi:home-assistant
+title: Home
+id: Home
+
+cards:
+          
+  ## ROW 2 ###################################################################################################################
+  - type: vertical-stack
+    cards: 
+      - !include
+        - ../includes/titles.yaml
+        - title: TEMPERATUUR
+      ## TEMPERATUR / LICHT / LUFTFEUCHTIGKEIT ##
+      - type: horizontal-stack
+        cards:
+          - type: sensor
+            entity: sensor.living_temperature
+            graph: line
+            name: Living
+      
+  ## ROW 3 ###################################################################################################################
+  # - type: vertical-stack
+  #   cards: 
+
+  #     - type: "custom:button-card"
+  #       template: heading
+  #       name: KARTE
+
+  #     ## KARTE ##                  
+  #     - type: map
+  #       style: !include ../includes/style.yaml
+  #       aspect_ratio: 16x9
+  #       default_zoom: 14
+  #       dark_mode: false
+  #       entities:
+  #         - device_tracker.niu
+  #         - device_tracker.google_maps_108265044794977597376
+  #         - device_tracker.google_maps_109408471456601103538       
