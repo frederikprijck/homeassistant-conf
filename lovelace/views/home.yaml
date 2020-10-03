@@ -1,0 +1,43 @@
+badges:
+  - entity: binary_sensor.updater
+  - entity: binary_sensor.0x00158d00027046a5_water_leak
+  - entity: person.home
+  - entity: sensor.0x00158d00027046a5_battery
+  - entity: sensor.0x00158d00027046a5_linkquality
+  - entity: sensor.shenzhen_neo_electronics_co_ltd_siren_alarm_sourcenodeid
+  - entity: sensor.shenzhen_neo_electronics_co_ltd_siren_alarm_indicator
+  - entity: sensor.shenzhen_neo_electronics_co_ltd_siren_alarm_battery_level
+  - entity: sensor.shenzhen_neo_electronics_co_ltd_siren_alarm_alarm_type
+  - entity: sensor.shenzhen_neo_electronics_co_ltd_siren_alarm_alarm_level
+  - entity: sun.sun
+cards:
+  - entities:
+      - entity: switch.0x00158d0003618c18_switch
+      - entity: sensor.0x00158d0003618c18_power
+      - entity: binary_sensor.voordeur_contact
+    title: Gang
+    type: entities
+  - entities:
+      - entity: sensor.living_temperature
+      - entity: light.0x14b457fffec7138e_light
+      - entity: binary_sensor.0x14b457fffec7138e_update_available
+      - entity: binary_sensor.schuifraam_contact
+      - entity: binary_sensor.achterdeur_contact
+      - entity: binary_sensor.living_occupancy
+    title: Living Room
+    type: entities
+  - entity: alarm_control_panel.ha_alarm
+    type: alarm-panel
+  - entity: weather.home
+    type: weather-forecast
+  - entities:
+      - zwave.aeon_labs_zw090_z_stick_gen5_eu
+      - zwave.shenzhen_neo_electronics_co_ltd_siren_alarm
+    title: Z-Wave
+    type: entities
+  - entities:
+      - entity: vacuum.stafke
+    title: Stofzuiger
+    type: entities
+path: default_view
+title: Home2
