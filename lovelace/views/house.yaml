@@ -18,8 +18,9 @@ cards:
           ha-markdown {
             padding: 0px 0px 0px 8px !important;
             border-left: 3px solid var(--accent-color);
+            text-transform: uppercase;
           }
-        content: TEMPERATUUR
+        content: Temperatuur
       - type: sensor
         entity: sensor.living_temperature
         graph: line
@@ -39,6 +40,7 @@ cards:
           ha-markdown {
             padding: 0px 0px 0px 8px !important;
             border-left: 3px solid var(--accent-color);
+            text-transform: uppercase;
           }
         content: Ramen en Deuren
       - type: horizontal-stack
@@ -91,6 +93,7 @@ cards:
           ha-markdown {
             padding: 0px 0px 0px 8px !important;
             border-left: 3px solid var(--accent-color);
+            text-transform: uppercase;
           }
         content: Beweging
       - type: horizontal-stack
@@ -98,6 +101,7 @@ cards:
           - type: "custom:button-card"
             entity: binary_sensor.living_occupancy
             icon: hass:motion-sensor-off
+            name: "Living"
             show_state: false
             color_type: card
             state:
