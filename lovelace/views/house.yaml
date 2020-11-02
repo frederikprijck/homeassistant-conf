@@ -110,4 +110,7 @@ cards:
               - value: "on"
                 color: var(--accent-color)
                 icon: mdi:motion-sensor
+      - !include
+          - ../includes/titles.yaml
+          - title: LICHT & BEWEGUNG
           
