@@ -20,7 +20,7 @@ cards:
             border-left: 3px solid var(--accent-color);
             text-transform: uppercase;
           }
-        content: Temperatuur
+        content: TEMPERATUUR
       - type: sensor
         entity: sensor.living_temperature
         graph: line
@@ -42,7 +42,7 @@ cards:
             border-left: 3px solid var(--accent-color);
             text-transform: uppercase;
           }
-        content: Ramen en Deuren
+        content: RAMEN EN DEUREN
       - type: horizontal-stack
         cards:
           - type: "custom:button-card"
@@ -95,7 +95,7 @@ cards:
             border-left: 3px solid var(--accent-color);
             text-transform: uppercase;
           }
-        content: Beweging
+        content: BEWEGING
       - type: horizontal-stack
         cards:
           - type: "custom:button-card"
